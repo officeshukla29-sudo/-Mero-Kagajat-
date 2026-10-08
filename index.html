@@ -213,7 +213,7 @@ function render(){clean();const A=$('#app');let h;
     <button data-a=th>${mi('🌓','#6366f1')}<span>डार्क / लाइट मोड</span><span class=nx>›</span></button><button data-a=pin>${mi('🔒','#0891b2')}<span>PIN लक — ${LS('pin')?'चालु':'बन्द'}</span><span class=nx>›</span></button>
     <button data-a=inst>${mi('📲','#2563eb')}<span>App Install गर्नुहोस्</span><span class=nx>›</span></button><button data-a=allpdf>${mi('🗎','#ea580c')}<span>सबै कागजात एउटै PDF मा</span><span class=nx>›</span></button>
     <button data-a=bk>${mi('💾','#16a34a')}<span>Backup बनाउनुहोस् (फाइल)</span><span class=nx>›</span></button><button data-a=rs>${mi('📥','#db2777')}<span>Backup बाट फर्काउनुहोस्</span><span class=nx>›</span></button>
-    <button data-a=diag>${mi('🔧','#f59e0b')}<span>Install जाँच (समस्या भए)</span><span class=nx>›</span></button><div class=li>${mi('💽','#64748b')}<span>फोनमा प्रयोग भएको ठाउँ: <b id=sto>…</b></span></div><div class=li>${mi('🔐','#64748b')}<span>सबै फोटो यही फोनमा मात्र बस्छन् · v7</span></div></div></div>`;
+    <button data-a=diag>${mi('🔧','#f59e0b')}<span>Install जाँच (समस्या भए)</span><span class=nx>›</span></button><div class=li>${mi('💽','#64748b')}<span>फोनमा प्रयोग भएको ठाउँ: <b id=sto>…</b></span></div><div class=li>${mi('🔐','#64748b')}<span>सबै फोटो यही फोनमा मात्र बस्छन् · v8</span></div></div></div>`;
   A.innerHTML=h+tabbar();if(tab==='home')covers();
   if(tab==='menu'&&navigator.storage&&navigator.storage.estimate)navigator.storage.estimate().then(e=>{const s=$('#sto');if(s)s.textContent=(e.usage/1048576).toFixed(1)+' MB'})}
 /* detail */
